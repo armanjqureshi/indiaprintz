@@ -235,6 +235,31 @@ caption{text-align:left;padding:12px 14px;font-family:var(--mono);font-size:12px
 .photo{margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--rule);background:var(--tile)}
 .photo img{width:100%}
 .photo figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);padding:10px 12px;background:var(--surface)}
+.art-hd .byline{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.art-hd .lede{max-width:70ch}
+.art-sec{padding-block:clamp(32px,5vw,56px)}
+.art-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:960px){.art-grid{grid-template-columns:minmax(0,1fr)}.art-side{order:-1}}
+.article{max-width:72ch;font-size:1.06rem;line-height:1.75}
+.article h2{font-size:clamp(1.45rem,2.6vw,1.95rem);margin:44px 0 14px;scroll-margin-top:90px}
+.article h2:first-child{margin-top:0}
+.article h3{font-size:1.15rem;margin:28px 0 8px}
+.article p{margin:0 0 1em}
+.article ul,.article ol{padding-left:1.25em;margin:0 0 1.2em}
+.article li{margin:6px 0}
+.article .tbl{margin:20px 0 26px}
+.article table{min-width:520px}
+.article blockquote{margin:22px 0;padding:14px 18px;border-left:4px solid var(--yellow);background:var(--surface);font-weight:600}
+.article blockquote p{margin:0}
+.art-side{position:sticky;top:calc(84px + env(safe-area-inset-top,0px));display:grid;gap:14px}
+@media (max-width:960px){.art-side{position:static}}
+.side-box{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:16px 18px;display:grid;gap:10px}
+.side-h{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;font-stretch:100%}
+.toc{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:14.5px;line-height:1.35}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--blue);text-decoration:underline}
+.side-cta p{font-size:14.5px;color:var(--muted);line-height:1.5}
+@media (max-width:960px){.art-side .side-box:first-child{max-height:none}}
 .guide h2{margin:40px 0 14px;font-size:clamp(1.4rem,2.6vw,1.9rem)}
 .guide h2:first-child{margin-top:0}
 .guide ul{padding-left:1.2em;color:var(--muted)}
