@@ -35,6 +35,12 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,su
 .wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .skip{position:absolute;left:-999px;top:8px;background:var(--yellow);color:var(--on-yellow);padding:8px 12px;z-index:99}
 .skip:focus{left:12px}
+/* India Gate cursor (mouse and trackpad only) */
+@media (hover:hover) and (pointer:fine){
+html,body{cursor:url("/img/cursor-gate.svg") 16 3,url("/img/cursor-gate.png") 16 3,auto}
+a,button,summary,select,label,[role="button"],.card,.filters button{cursor:url("/img/cursor-gate-link.svg") 16 3,url("/img/cursor-gate-link.png") 16 3,pointer}
+input,textarea{cursor:text}
+}
 /* header */
 .hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--surface);border-bottom:1px solid var(--rule)}
 .hd .wrap{display:flex;align-items:center;gap:20px;min-height:66px}
