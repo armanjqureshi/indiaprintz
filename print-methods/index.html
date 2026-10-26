@@ -100,7 +100,7 @@ section{padding-block:clamp(48px,7vw,88px)}
 .facts b{display:block;font-family:var(--display);font-stretch:112%;font-size:1.35rem;color:var(--ink);letter-spacing:-.01em;font-weight:800}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chips span{width:26px;height:26px;border-radius:4px;border:1.5px solid var(--ink)}
-@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+@media (max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
 /* estimator ticket */
 .ticket{background:var(--surface);border:2px solid var(--ink);border-radius:var(--r);position:relative;min-width:0}
 .ticket-hd{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;border-bottom:2px dashed var(--rule);font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -151,7 +151,7 @@ section{padding-block:clamp(48px,7vw,88px)}
 .methods p{font-size:15px;color:var(--muted);line-height:1.5}
 /* split rows */
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
-@media (max-width:860px){.split{grid-template-columns:1fr}}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
 .uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden}
 .uses div{background:var(--surface);padding:18px 20px;display:grid;gap:6px;align-content:start}
 .uses p{font-size:15px;color:var(--muted);line-height:1.5}
@@ -234,7 +234,7 @@ caption{text-align:left;padding:12px 14px;font-family:var(--mono);font-size:12px
 .page-hd .wrap{display:grid;gap:18px}
 .page-hd .split{align-items:start}
 .cols2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px)}
-@media (max-width:860px){.cols2{grid-template-columns:1fr}}
+@media (max-width:860px){.cols2{grid-template-columns:minmax(0,1fr)}}
 .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .review{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:20px;display:grid;gap:12px;align-content:start}
 .stars{color:#E8A400;letter-spacing:2px;font-size:15px}
@@ -311,7 +311,8 @@ caption{text-align:left;padding:12px 14px;font-family:var(--mono);font-size:12px
 <div><h4>Print methods</h4><ul><li><a href="/screen-printing-mumbai/">Screen printing</a></li><li><a href="/dtf-printing-mumbai/">DTF printing</a></li><li><a href="/embroidery-mumbai/">Embroidery</a></li><li><a href="/sublimation-printing-mumbai/">Sublimation printing</a></li></ul></div>
 <div><h4>Company</h4><ul><li><a href="/corporate-t-shirts-mumbai/">Corporate t-shirts</a></li><li><a href="/bulk-t-shirt-printing-mumbai/">Bulk orders</a></li><li><a href="/corporate-gifts-mumbai/">Corporate gifts</a></li><li><a href="/guides/">Guides</a></li><li><a href="/delivery-areas-mumbai/">Delivery areas</a></li><li><a href="/about/">About us</a></li><li><a href="/contact/">Contact</a></li></ul></div>
 </div>
-<div class="area-strip"><h4>Customised t-shirt printing across Mumbai</h4><ul><li><a href="/customised-t-shirt-printing-andheri/">Andheri</a></li><li><a href="/customised-t-shirt-printing-bandra/">Bandra</a></li><li><a href="/customised-t-shirt-printing-borivali/">Borivali</a></li><li><a href="/customised-t-shirt-printing-goregaon/">Goregaon</a></li><li><a href="/customised-t-shirt-printing-dadar/">Dadar</a></li><li><a href="/customised-t-shirt-printing-ghatkopar/">Ghatkopar</a></li><li><a href="/customised-t-shirt-printing-thane/">Thane</a></li><li><a href="/customised-t-shirt-printing-navi-mumbai/">Navi Mumbai</a></li><li><a href="/customised-t-shirt-printing-mira-road-bhayandar/">Mira Road and Bhayandar</a></li><li><a href="/customised-t-shirt-printing-vasai-virar/">Vasai and Virar</a></li></ul></div>
+<div class="area-strip"><h4>Customised t-shirt printing across Mumbai</h4><ul><li><a href="/customised-t-shirt-printing-andheri/">Andheri</a></li><li><a href="/customised-t-shirt-printing-bandra/">Bandra</a></li><li><a href="/customised-t-shirt-printing-borivali/">Borivali</a></li><li><a href="/customised-t-shirt-printing-goregaon/">Goregaon</a></li><li><a href="/customised-t-shirt-printing-dadar/">Dadar</a></li><li><a href="/customised-t-shirt-printing-ghatkopar/">Ghatkopar</a></li><li><a href="/customised-t-shirt-printing-thane/">Thane</a></li><li><a href="/customised-t-shirt-printing-navi-mumbai/">Navi Mumbai</a></li><li><a href="/customised-t-shirt-printing-mira-road-bhayandar/">Mira Road and Bhayandar</a></li><li><a href="/customised-t-shirt-printing-vasai-virar/">Vasai and Virar</a></li><li><a href="/customised-t-shirt-printing-powai/">Powai</a></li><li><a href="/customised-t-shirt-printing-malad/">Malad</a></li><li><a href="/customised-t-shirt-printing-chembur/">Chembur</a></li><li><a href="/customised-t-shirt-printing-mulund/">Mulund</a></li><li><a href="/customised-t-shirt-printing-lower-parel/">Lower Parel and Worli</a></li><li><a href="/customised-t-shirt-printing-kurla/">Kurla</a></li><li><a href="/customised-t-shirt-printing-vile-parle/">Vile Parle and Santacruz</a></li><li><a href="/customised-t-shirt-printing-south-mumbai/">South Mumbai</a></li><li><a href="/customised-t-shirt-printing-kalyan/">Kalyan</a></li><li><a href="/customised-t-shirt-printing-dombivli/">Dombivli</a></li></ul></div>
+<div class="area-strip" style="margin-top:18px;padding-top:18px"><h4>Occasions</h4><ul><li><a href="/ganpati-t-shirt-printing-mumbai/">Ganpati t-shirts</a></li><li><a href="/navratri-garba-t-shirts-mumbai/">Navratri and garba t-shirts</a></li><li><a href="/photo-printing-on-t-shirt-mumbai/">Photo printing on t-shirts</a></li><li><a href="/name-printed-t-shirts-mumbai/">Name printed t-shirts</a></li><li><a href="/t-shirt-manufacturer-in-mumbai/">T-shirt manufacturer in Mumbai</a></li><li><a href="/uniform-manufacturer-in-mumbai/">Uniform manufacturer in Mumbai</a></li><li><a href="/wedding-t-shirts-mumbai/">Wedding t-shirts</a></li><li><a href="/couple-t-shirts-mumbai/">Couple t-shirts</a></li><li><a href="/birthday-family-t-shirts-mumbai/">Birthday and family t-shirts</a></li><li><a href="/gym-t-shirt-printing-mumbai/">Gym t-shirts</a></li></ul></div>
 <div class="bot"><span>© 2026 indiaprints and stitches</span><span>T-shirt printing, uniforms and team kits for Mumbai</span></div>
 </div></footer>
 <a class="float-wa" href="https://wa.me/919503690140?text=Hi%20indiaprints%2C%20I%27d%20like%20a%20quote%20for%20custom%20printing." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span>WhatsApp</span></a><script>(function(){var r=document.documentElement,b=document.getElementById("theme-btn");if(!b)return;
